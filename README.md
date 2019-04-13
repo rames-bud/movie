@@ -21,7 +21,7 @@ The goal of the app is to add, delete, edit and list movies from a NoSQL databas
 ### API RESOURCES:
 
 - [POST /addMovie](#post-addMovie)
-- [POST /deleteMovie/{movieId}](#post-deleteMovie/{movieId})
+- [POST /deleteMovie/{movieId}](#post-deletemoviemovieid)
 - [PUT /editMovie/{movieId}](#put-editMovie/{movieId})
 - [GET /getMovie/{movieId}](#get-getMovie/{movieId})
 - [GET /getMovie/all](#get-getMovie/all)
