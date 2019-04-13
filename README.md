@@ -197,6 +197,11 @@ Response body:
 }
 ```
 
+### POSTMAN Collection
+```
+Please see movie_app.postman_collection.json
+```
+
 ### Contributing developers
 * Ramesh Upadhyaya (ramesupadhyaya@gmail.com)
 

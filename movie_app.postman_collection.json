@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "c41d5869-5cf0-49af-a1ef-ecaa3bb6453b",
+		"name": "Movie App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Movie",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authToken",
+						"value": "c2VjdXJlbW92aWU=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"movieName\": \"Aqua Man\",\n  \"rating\": \"6.8\",\n  \"releaseDate\": \"2018-11-21\",\n  \"directors\": [\n      \"Travis Knight\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/addMovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "c2VjdXJlbW92aWU="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/deleteMovie/7THv5cgCh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteMovie",
+						"7THv5cgCh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Movie",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "c2VjdXJlbW92aWU="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"movieName\": \"ramesh movie new test\",\n    \"rating\": \"1.0\",\n    \"releaseDate\": \"2018-11-21\",\n    \"directors\": [\n        \"ramesh test\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/editMovie/7THv5cgCh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"editMovie",
+						"7THv5cgCh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Movies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "c2VjdXJlbW92aWU="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/getMovie/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getMovie",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Movie Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authToken",
+						"value": "c2VjdXJlbW92aWU="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/getMovie/2BYzzgDiX",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getMovie",
+						"2BYzzgDiX"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
