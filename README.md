@@ -13,7 +13,7 @@ The goal of the app is to add, delete, edit and list movies from a NoSQL databas
 
 - MONGODB
   - MONGODB should be running locally with the URI mongodb://127.0.0.1:27017/movieApp
-- Angular UI
+- Angular UI (Optional)
   - Angular app should be running locally
 
 ## REQUEST & RESPONSE EXAMPLES
@@ -21,13 +21,19 @@ The goal of the app is to add, delete, edit and list movies from a NoSQL databas
 ### API RESOURCES:
 
 - [POST /addMovie](#post-addMovie)
-- [GET /getMovie/all](#get-getMovie/all)
+- [POST /deleteMovie/{movieId}](#post-deleteMovie/{movieId})
 - [PUT /editMovie/{movieId}](#put-editMovie/{movieId})
-- [POST /deleteMovie/{movieId}](#delete-/{movieId})
-- [GET /getMovie/{movieId}](#get-status)
+- [GET /getMovie/{movieId}](#get-getMovie/{movieId})
+- [GET /getMovie/all](#get-getMovie/all)
+
 
 AVAILABLE ENDPOINTS:
 - **local:** http://localhost:3000/addMovie
+- **local:** http://localhost:3000/deleteMovie/{movieId}
+- **local:** http://localhost:3000/editMovie/{movieId}
+- **local:** http://localhost:3000/getMovie/{movieId}
+- **local:** http://localhost:3000/getMovie/all
+
 
 ### POST /addMovie
 

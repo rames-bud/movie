@@ -89,7 +89,6 @@ const editMovie = (req, res) => {
   })
     .exec((err, result) => {
       let apiResponse = {};
-      console.log(result);
       if (err) {
         apiResponse = response.generate(true, 'Error occurred while updating', 500, null);
         res.send(apiResponse);
