@@ -34,6 +34,7 @@ AVAILABLE ENDPOINTS:
 - **local:** http://localhost:3000/getMovie/{movieId}
 - **local:** http://localhost:3000/getMovie/all
 
+### **authToken**: `c2VjdXJlbW92aWU=`
 
 ### POST /addMovie
 
