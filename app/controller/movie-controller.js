@@ -21,7 +21,6 @@ const addMovie = (req, res) => {
       createdAt: time.now()
     });
     newMovie.save((err, result) => {
-      console.log('line26', result);
       delete result.__v;
       delete result._id;
       if (err) {
