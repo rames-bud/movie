@@ -62,7 +62,7 @@ const getSingleMovie = (req, res) => {
   MovieModel.find({
     movieId: req.params.movieId
   })
-    .select('-__v -_id -movieId')
+    .select('-__v -_id')
     .lean()
     .exec((err, result) => {
       let apiResponse = {};

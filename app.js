@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const fs = require('fs');
 const helmet = require('helmet');
 const http = require('http');
+const cors = require('cors');
 
 const app = express();
 const { appConfig } = require('./config/app-config');
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routeLoggerMiddleware.logIp);
 app.use(globalErrorMiddleware.globalErrorHandler);
 app.use(helmet());
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'client')));
 
